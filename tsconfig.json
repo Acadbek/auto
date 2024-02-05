@@ -1,37 +1,20 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "",
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "allowImportingTsExtensions": true,
     "allowJs": true,
     "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/components/*": [
-        "components/*"
-      ],
-      "@/pages/*": [
-        "pages/*"
-      ],
-      "@/app/*": [
-        "app/*"
-      ],
-      "@/lib/*": [
-        "lib/*"
-      ],
-      "@/styles/*": [
-        "styles/*"
-      ]
-    },
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -40,14 +23,64 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@/lib/*": [
+        "lib/*"
+      ],
+      "@/styles/*": [
+        "styles/*"
+      ],
+      "@/public/*": [
+        "public/*"
+      ],
+      "@/utils/*": [
+        "utils/*"
+      ],
+      "@/types/*": [
+        "types/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
+      ],
+      "@/pages/*": [
+        "pages/*"
+      ],
+      "@/api/*": [
+        "api/*"
+      ],
+      "@/db/*": [
+        "db/*"
+      ],
+      "@/config/*": [
+        "config/*"
+      ],
+      "@/assets/*": [
+        "assets/*"
+      ],
+      "@/constants/*": [
+        "constants/*"
+      ],
+      "@/context/*": [
+        "context/*"
+      ],
+      "@/services/*": [
+        "services/*"
+      ],
+      "@/store/*": [
+        "store/*"
+      ],
+      "@/components/*": [
+        "components/*"
+      ]
+    }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "convex/auth.config.js"  ],
+  ],
   "exclude": [
     "node_modules"
   ]
