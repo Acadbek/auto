@@ -26,7 +26,7 @@
     ],
     "paths": {
       "@/lib/*": [
-        "./lib"
+        "./lib/*"
       ],
       "@/styles/*": [
         "styles/*"
